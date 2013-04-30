@@ -14,5 +14,15 @@
     "chart"
   ],
   "author": "andy perlitch",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "underscore": ">=1.4.3",
+    "backbone": ">=1.0.0",
+    "bassview": ">=0.0.5",
+    "ktbr": ">=0.0.3",
+    "raphael": ">=2.1.0"
+  },
+  "devDependencies": {
+    "knights-templar": ""
+  }
 }
