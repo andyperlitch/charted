@@ -37,6 +37,7 @@
   line-height: 13px;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis ul {
+  margin: 0;
   padding: 0 10px;
   list-style-type: none;
 }
