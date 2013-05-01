@@ -22,7 +22,10 @@
   padding: 0 10px 0 2em;
   margin: 0;
   text-align: right;
-  border-right: 1px solid black;
+  border-right: 1px solid #aaaaaa;
+}
+.charted-ctnr .chart-yaxes .chart-yaxis:last-child {
+  border-right: none;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis .yaxis-label {
   -moz-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -63,10 +66,10 @@
   vertical-align: bottom;
   height: 1px;
   width: 10px;
-  background-color: black;
+  background-color: #aaaaaa;
 }
 .charted-ctnr .chart-xaxis ul {
-  box-shadow: 0 -1px 0 0 #000000;
+  box-shadow: inset 0 -1px 0 0 #aaaaaa;
   position: relative;
   height: 2em;
   margin: 0;
@@ -108,7 +111,7 @@
   width: 70%;
   height: 0px;
   margin: 2px auto;
-  border-color: #AAA;
+  border-color: #aaaaaa;
   border-width: 1px 0 0;
   border-style: solid;
   position: relative;
@@ -132,7 +135,7 @@
 }
 .charted-ctnr .chart-viewport {
   position: relative;
-  box-shadow: inset 0 0 0 1px #AAA;
+  box-shadow: inset 0 0 0 1px #aaaaaa;
 }
 .charted-ctnr .chart-viewport .chart-pointinfo {
   position: absolute;

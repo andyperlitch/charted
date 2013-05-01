@@ -5,9 +5,14 @@
         <% } %>
         <td class="chart-viewport-td">
             <div class="chart-viewport" style="height:<%= vp_height %>px;"></div>
-            <% if (render_x) { %>
-            <div class="chart-xaxis"></div>
-            <% } %>
         </td>
     </tr>
+    <% if (render_x) { %>
+    <tr>
+        <td></td>
+        <td>
+            <div class="chart-xaxis"></div>
+        </td>
+    </tr>
+    <% } %>
 </table>

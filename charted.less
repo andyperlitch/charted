@@ -1,3 +1,5 @@
+@charted_border_color: #AAA;
+
 .charted-ctnr {
 	
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Myriad Pro", Myriad, Geneva, Arial, "Lucida Grande", sans-serif;
@@ -25,7 +27,11 @@
 			padding:0 10px 0 2em;
 			margin:0;
 			text-align:right;
-			border-right:1px solid black;
+			border-right:1px solid @charted_border_color;
+			
+			&:last-child{
+				border-right:none;
+			}
 			
 			.yaxis-label {
 				-moz-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -73,7 +79,7 @@
 						vertical-align:bottom;
 						height:1px;
 						width:10px;
-						background-color:black;
+						background-color:@charted_border_color;
 					}
 				}
 			}
@@ -82,7 +88,7 @@
 		
 	}
 	.chart-xaxis ul {
-		box-shadow:0 -1px 0 0 black;
+		box-shadow:inset 0 -1px 0 0 @charted_border_color;
 		position:relative;
 		height:2em;
 		margin:0;
@@ -115,7 +121,7 @@
 			width: 17px;
 			background-color: #EEE;
 			border-radius: 5px 0 0 0;
-			box-shadow: inset 0 -1px 12px -5px, 0 0 0 1px #AAA;
+			box-shadow: inset 0 -1px 12px -5px, 0 0 0 1px @charted_border_color;
 			border:none;
 
 			.resizer-grip {
@@ -124,7 +130,7 @@
 				width: 70%;
 				height: 0px;
 				margin: 2px auto;
-				border-color: #AAA;
+				border-color: @charted_border_color;
 				border-width: 1px 0 0;
 				border-style: solid;
 				position:relative;
@@ -151,7 +157,7 @@
 	}
 	.chart-viewport {
 		position:relative;
-		box-shadow:inset 0 0 0 1px #AAA;
+		box-shadow:inset 0 0 0 1px @charted_border_color;
 		
 		.chart-pointinfo {
 			position:absolute;

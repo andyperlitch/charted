@@ -9,22 +9,21 @@ var dz = [
 ];
 var chart = window.chart = new Chart({
     data: dz,
-    vp_width: 1000,
-    vp_height: 400,
     id: 'simple',
     x_key: 'time',
+    x_axis_formatter: 'time',
     multi_y: false
 });
 $(function() {
-    chart.model.plot({
+    chart.plot({
         key: 'key1',
         color: 'green'
     });
-    chart.model.plot({
+    chart.plot({
         key: 'key2',
         color: 'blue'
     });
-    chart.model.plot({
+    chart.plot({
         key: 'key3',
         color: 'red'
     });

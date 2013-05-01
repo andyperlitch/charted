@@ -11,4 +11,9 @@ var Charted = function(options) {
     
 };
 
+Charted.prototype.plot = function(attrs) {
+    this.model.plot(attrs);
+    return this;
+}
+
 exports = module.exports = Charted
