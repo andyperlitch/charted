@@ -8,7 +8,6 @@ var dz = [
    { key1: 3, key2: 77, key3: 489, time: 1367296694807 }
 ];
 
-var dz = [];
 var chart = window.chart = new Chart({
     data: dz,
     id: 'simple',
