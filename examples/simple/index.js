@@ -1,12 +1,14 @@
 var _ = require('underscore'), Backbone = require('backbone');
 var Chart = require('../../');
 var dz = [
-   { key1: 2, key2: 45, key3: 311, time: 1367296690307 },
-   { key1: 4, key2: 34, key3: 193, time: 1367296692807 },
-   { key1: 1, key2: 93, key3: 101, time: 1367296693807 },
+   { key2: 45, key3: 311, time: 1367296690307 },
+   { key1: 4, key3: 193, time: 1367296692807 },
+   { key1: 1, key2: 93, time: 1367296693807 },
    { key1: 8, key2: 12, key3: 204, time: 1367296691807 },
    { key1: 3, key2: 77, key3: 489, time: 1367296694807 }
 ];
+
+var dz = [];
 var chart = window.chart = new Chart({
     data: dz,
     id: 'simple',
