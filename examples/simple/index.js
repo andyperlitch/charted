@@ -1,11 +1,12 @@
 var _ = require('underscore'), Backbone = require('backbone');
 var Chart = require('../../');
+var now = +new Date();
 var dz = [
-   { key2: 45, key3: 311, time: 1367296690307 },
-   { key1: 4, key3: 193, time: 1367296692807 },
-   { key1: 1, key2: 93, time: 1367296693807 },
-   { key1: 8, key2: 12, key3: 204, time: 1367296691807 },
-   { key1: 3, key2: 77, key3: 489, time: 1367296694807 }
+   { key2: 45, key3: 311, time: now },
+   { key1: 4, key3: 193, time: now + 60000 },
+   { key1: 1, key2: 93, time: now + 105000 },
+   { key1: 8, key2: 12, key3: 204, time: now + 120000 },
+   { key1: 3, key2: 77, key3: 489, time: now - 50000 }
 ];
 
 var chart = window.chart = new Chart({
