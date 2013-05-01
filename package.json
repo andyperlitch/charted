@@ -1,6 +1,6 @@
 {
   "name": "charted",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Charts an entire collection of data. Single or multiple y-axes. Support for 64-bit integers. Auto-resizing axes.",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,8 @@
     "knights-templar": ""
   },
   "browserify": {
-    "transform": ["ktbr"]
+    "transform": [
+      "ktbr"
+    ]
   }
 }
