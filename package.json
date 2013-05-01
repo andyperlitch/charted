@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "knights-templar": ""
+  },
+  "browserify": {
+    "transform": ["ktbr"]
   }
 }
