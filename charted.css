@@ -10,8 +10,7 @@
   border-spacing: 0;
 }
 .charted-ctnr .chart-yaxes,
-.charted-ctnr .chart-viewport-td,
-.charted-ctnr .chart-yaxis {
+.charted-ctnr .chart-viewport-td {
   display: inline-block;
   vertical-align: top;
   padding: 0;
