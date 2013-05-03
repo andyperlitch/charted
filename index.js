@@ -22,4 +22,8 @@ Charted.prototype.render = function() {
     return this.view;
 }
 
+Charted.prototype.destroy = function() {
+    this.model.destroy();
+}
+
 exports = module.exports = Charted
