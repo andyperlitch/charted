@@ -14,8 +14,9 @@ var chart = window.chart = new Chart({
     id: 'simple',
     x_key: 'time',
     x_axis_formatter: 'time',
-    multi_y: false
+    multi_y: true
 });
+
 $(function() {
     chart.plot({
         key: 'key1',
