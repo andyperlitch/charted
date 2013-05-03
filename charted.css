@@ -52,7 +52,7 @@
   top: 0;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker.top .mark {
-  vertical-align: top;
+  top: 0;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker.bottom .label {
   top: 0;
