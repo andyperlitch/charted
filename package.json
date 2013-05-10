@@ -20,7 +20,8 @@
     "backbone": ">=1.0.0",
     "bassview": ">=0.0.5",
     "ktbr": ">=0.0.3",
-    "raphael": ">=2.1.0"
+    "raphael": ">=2.1.0",
+    "bormat": "0.0.8"
   },
   "devDependencies": {
     "knights-templar": ""
