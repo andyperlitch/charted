@@ -1,18 +1,16 @@
-<table>
-    <tr style="height:<%= vp_height %>px;">
-        <% if (render_y) { %>
-        <td class="chart-yaxes"></td>    
-        <% } %>
-        <td class="chart-viewport-td">
-            <div class="chart-viewport" style="height:<%= vp_height %>px;"></div>
-        </td>
-    </tr>
-    <% if (render_x) { %>
-    <tr>
-        <td></td>
-        <td>
-            <div class="chart-xaxis"></div>
-        </td>
-    </tr>
+<tr style="height:<%= vp_height %>px;">
+    <% if (render_y) { %>
+    <td class="chart-yaxes"></td>    
     <% } %>
-</table>
+    <td class="chart-viewport-td">
+        <div class="chart-viewport" style="height:<%= vp_height %>px;"></div>
+    </td>
+</tr>
+<% if (render_x) { %>
+<tr>
+    <td></td>
+    <td>
+        <div class="chart-xaxis"></div>
+    </td>
+</tr>
+<% } %>
