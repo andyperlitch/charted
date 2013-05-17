@@ -146,10 +146,12 @@
 }
 .charted-ctnr .chart-viewport .chart-pointinfo {
   position: absolute;
-  background: #FFF;
+  background: #000;
+  color: #FFF;
   z-index: 1;
-  box-shadow: inset 0 -1px 46px -7px rgba(0, 0, 0, 0.1), 0 1px 7px -2px rgba(0, 0, 0, 0.5);
-  text-shadow: 0 1px 0 white;
+  box-shadow: /*				inset 0 -1px 46px -7px rgba(0, 0, 0, 0.1), */
+ 0 1px 7px -2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   letter-spacing: 0.1em;
   padding: 0 10px;
   border-radius: 5px;
