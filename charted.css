@@ -63,6 +63,10 @@
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker .label {
   position: relative;
   top: 0.5em;
+  font-size: 10px;
+  line-height: 10px;
+  white-space: nowrap;
+  font-family: 'Menlo', 'Monaco', monospace;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker .mark {
   position: absolute;
