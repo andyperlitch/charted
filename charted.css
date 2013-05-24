@@ -90,6 +90,7 @@
   list-style-type: none;
 }
 .charted-ctnr .chart-xaxis ul .mark {
+  line-height: 2em;
   padding: 0 3px;
   position: absolute;
   box-shadow: inset 1px 0 0 black;
