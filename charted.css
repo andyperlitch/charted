@@ -47,6 +47,7 @@
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker {
   position: absolute;
   right: 0;
+  line-height: 1em;
 }
 .charted-ctnr .chart-yaxes .chart-yaxis ul .chart-yaxis-marker.top .label {
   top: 0;
