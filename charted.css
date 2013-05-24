@@ -166,6 +166,10 @@
   padding: 0 10px;
   border-radius: 5px;
 }
+.charted-ctnr .chart-viewport .chart-pointinfo h3 {
+  font-size: 16px;
+  line-height: 1.5em;
+}
 .charted-ctnr .chart-viewport .chart-pointinfo h3,
 .charted-ctnr .chart-viewport .chart-pointinfo p {
   margin: 5px 0;
