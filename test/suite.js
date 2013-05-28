@@ -19,7 +19,7 @@ describe("the Charted module", function() {
                 data: dz,
                 id: 'simple',
                 x_key: 'time',
-                x_axis_formatter: 'time',
+                x_formatter: 'time',
                 multi_y: false
             });
             this.$pg = $("#playground");
