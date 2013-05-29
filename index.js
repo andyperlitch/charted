@@ -3,13 +3,13 @@ var ChartView = require("./lib/ChartView");
 
 var Charted = function(options) {
     
-    if (options.mode === undefined) {
-        throw new Error('When instantiating a chart, please specify the mode');
+    if (options.type === undefined) {
+        throw new Error('When instantiating a chart, please specify the type');
     }
     
-    this.model = new ChartModel[options.mode](options);
+    this.model = new ChartModel[options.type](options);
     
-    this.view = new ChartView[options.mode]({
+    this.view = new ChartView[options.type]({
         model: this.model
     });
     
