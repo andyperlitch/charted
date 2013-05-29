@@ -3,9 +3,9 @@ var ChartView = require("./lib/ChartView");
 
 var Charted = function(options) {
     
-    this.model = new ChartModel(options);
+    this.model = new ChartModel[options.mode](options);
     
-    this.view = new ChartView({
+    this.view = new ChartView[options.mode]({
         model: this.model
     });
     
