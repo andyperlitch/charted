@@ -2,25 +2,28 @@ var assert = require('assert');
 var _ = require('underscore'), Backbone = require('backbone');
 describe("the Charted module", function() {
     
-    describe("a simple chart", function() {
+    describe("an empty chart", function() {
         
         beforeEach(function() {
             this.Charted = require('../');
             var now = +new Date();
-            var dz = [
-               { key2: 45, key3: 311, time: now },
-               { key1: 4, key3: 193, time: now + 60000 },
-               { key1: 1, key2: 93, time: now + 105000 },
-               { key1: 8, key2: 12, key3: 204, time: now + 120000 },
-               { key1: 3, key2: 77, key3: 489, time: now - 50000 }
-            ];
-
+            // var dz = [
+            //    { key2: 45, key3: 311, time: now },
+            //    { key1: 4, key3: 193, time: now + 60000 },
+            //    { key1: 1, key2: 93, time: now + 105000 },
+            //    { key1: 8, key2: 12, key3: 204, time: now + 120000 },
+            //    { key1: 3, key2: 77, key3: 489, time: now - 50000 }
+            // ];
+            
+            var dz = [];
+            
             this.chart = new this.Charted({
                 data: dz,
                 id: 'simple',
                 x_key: 'time',
                 x_formatter: 'time',
-                multi_y: false
+                multi_y: false,
+                type: 'line'
             });
             this.$pg = $("#playground");
             this.chart.render().$el.appendTo(this.$pg);
@@ -41,11 +44,68 @@ describe("the Charted module", function() {
             assert.equal(this.$pg.find('.chart-xaxis ul').length, 0, 'it rendered x-axes when it should not have');
         });
         
-        it("")
+        it("should write a message saying that no data is present", function() {
+            assert.equal(this.$pg.find('.chart-svg svg')[0].querySelector('tspan').textContent, 'no data received');
+        });
         
         afterEach(function() {
             this.chart.destroy();
         });
         
     });
-})
+    
+    describe("a line chart", function() {
+        
+        beforeEach(function() {
+            this.Charted = require('../');
+            var now = +new Date();
+            var dz = [
+               { key2: 45, key3: 311, time: now },
+               { key1: 4, key3: 193, time: now + 60000 },
+               { key1: 1, key2: 93, time: now + 105000 },
+               { key1: 8, key2: 12, key3: 204, time: now + 120000 },
+               { key1: 3, key2: 77, key3: 489, time: now - 50000 }
+            ];
+            
+            this.chart = new this.Charted({
+                data: dz,
+                id: 'simple',
+                x_key: 'time',
+                x_formatter: 'time',
+                multi_y: false,
+                type: 'line'
+            });
+            
+            this.chart.plot({
+                key: 'key1',
+                color: 'green',
+                visible: true
+            });
+            
+            this.chart.plot({
+                key: 'key2',
+                color: 'blue',
+                visible: false
+            });
+            
+            this.chart.plot({
+                key: 'key3',
+                color: 'red',
+                visible: false
+            });
+            
+            this.$pg = $("#playground");
+            this.chart.render().$el.appendTo(this.$pg);
+        });
+        
+        it("", function() {
+            
+        });
+        
+        afterEach(function() {
+            this.chart.destroy();
+        });
+        
+    });
+    
+});

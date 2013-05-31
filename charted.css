@@ -167,12 +167,21 @@
   border-radius: 5px;
 }
 .charted-ctnr .chart-viewport .chart-pointinfo h3 {
-  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
   line-height: 1.5em;
 }
 .charted-ctnr .chart-viewport .chart-pointinfo h3,
 .charted-ctnr .chart-viewport .chart-pointinfo p {
   margin: 5px 0;
+}
+.charted-ctnr .chart-viewport .chart-pointinfo .color-box {
+  vertical-align: middle;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
 }
 .charted-ctnr .chart-viewport path.gridline {
   stroke-width: 1px;
