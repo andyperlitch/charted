@@ -27,8 +27,6 @@
     "knights-templar": ""
   },
   "browserify": {
-    "transform": [
-      "ktbr"
-    ]
+    "transform": "ktbr"
   }
 }
